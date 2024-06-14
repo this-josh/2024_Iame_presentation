@@ -109,35 +109,35 @@ Further technoogical innovations may require further modifications to the trade 
 
 ---
 <section data-auto-animate>
-<h2 data-id="meth"><span>Methdology</span> <span class="fragment">: Data</span></h2>
+<h2 data-id="meth"><span>Methodology</span> <span class="fragment">: Data</span></h2>
 </section>
 
 <section data-auto-animate>
-<h2 data-id="meth"><span>Methdology : Data</span></h2>
+<h2 data-id="meth"><span>Methodology : Data</span></h2>
 <p>Combined multiple sources of public data</p>
 </section>
 
 <section data-auto-animate>
-<h2 data-id="meth"><span>Methdology : Data</span></h2>
+<h2 data-id="meth"><span>Methodology : Data</span></h2>
 <p>Combined multiple sources of public data</p>
 <p>Created a network of global Natural gas trade</p>
 </section>
 
 <section data-auto-animate>
-<h2 data-id="meth"><span>Methdology : Data</span></h2>
+<h2 data-id="meth"><span>Methodology : Data</span></h2>
 <p>Combined multiple sources of public data</p>
 <p>Created a network of global Natural gas trade</p>
 LNG <br> Pipeline
 </section>
 
 <section data-auto-animate>
-<h2 data-id="meth"><span>Methdology : Optimisation</span></h2>
+<h2 data-id="meth"><span>Methodology : Optimisation</span></h2>
 </section>
 
 
 ---
 <section>
-<h2><span>Methdology</span> <span class="fragment">: Data</span></h2>
+<h2><span>Methodology</span> <span class="fragment">: Data</span></h2>
 </section>
 
 - Combined multiple sources of public data  <!-- .element: class="fragment" -->
@@ -195,35 +195,48 @@ LNG <br> Pipeline
 
 <section data-auto-animate>
 <h3>Results: Trade capacity</h3>
-<img src="./assets/global_max_flows.png" alt="Natural Gas Deficit" style="max-width: 80%;">
+<img class="r-stretch" src="./assets/global_max_flows.png" alt="Natural Gas Deficit" >
 </section>
 <section data-auto-animate>
 <h3>Results: Trade capacity</h3>
-<img src="./assets/global_max_flows.png" alt="Natural Gas Deficit" style="max-width: 80%;">
+<img class="r-stretch" src="./assets/global_max_flows.png" alt="Natural Gas Deficit"> 
 <p>Pipeline worse affected</p>
 </section>
 <section data-auto-animate>
 <h3>Results: Trade capacity</h3>
-<img src="./assets/global_max_flows.png" alt="Natural Gas Deficit" style="max-width: 80%;">
+<img class="r-stretch" src="./assets/global_max_flows.png" alt="Natural Gas Deficit"> 
 <p>Pipeline worse affected</p>
 <p>Little Russian export capacity by Jan 2017</p>
 </section>
+<section data-auto-animate>
+<h3>Results: Trade capacity</h3>
+<img class="r-stretch" src="./assets/global_max_flows.png" alt="Natural Gas Deficit"> 
+<p>Pipeline worse affected</p>
+<p>Little Russian export capacity by Jan 2017</p>
+</section>
+
+<section>
+<p>After disruption</p>
+<h2 class="r-fit-text">$45.7\%$ </h2>
+<p>of flows changed</p>
+</section>
+
 
 ---
 
 
   <section data-auto-animate>
   <h3>Results: Natural gas deficit</h3>
-  <img src="./assets/largest_deficits.png" alt="Natural Gas Deficit" style="max-width: 80%;">
+  <img class="r-stretch" src="./assets/largest_deficits.png" alt="Natural Gas Deficit">
   </section>
   <section data-auto-animate>
   <h3>Results: Natural gas deficit</h3>
-  <img src="./assets/largest_deficits.png" alt="Natural Gas Deficit" style="max-width: 80%;">
+  <img class="r-stretch" src="./assets/largest_deficits.png" alt="Natural Gas Deficit">
   <p>No deficit before disruption  </p>
   </section>
   <section data-auto-animate>
   <h3>Results: Natural gas deficit</h3>
-  <img src="./assets/largest_deficits.png" alt="Natural Gas Deficit" style="max-width: 80%;">
+  <img class="r-stretch" src="./assets/largest_deficits.png" alt="Natural Gas Deficit">
   <p>No deficit before disruption  </p>
   <p>Large pipeline importers worst affected</p>
   </section>
@@ -231,20 +244,22 @@ LNG <br> Pipeline
 ---
 # Policy implications
 
+- Enables a user to test multiple scenarios
+  - Governments can explore policy
+  - Traders and/or governments can consider optimal stockpiling
+- Supports an explanation of currrent state
+  - Helps find gaps
+
+
 ---
 
 # Future work
+- Consider additional data sources
+  - Shipping (AIS)
+    - Mininmise shipping emissions
+    - Disrupt shipping corridors
+- Apply methods to other commodities
+  - Food
+  - Rare earth Metals
 
 ---
-
-# d 
-
-<!-- .slide: data-auto-animate -->
-- Mercury
-- Mars
----
-
-<!-- .slide: data-auto-animate -->
-- Mercury
-- Earth
-- Mars
