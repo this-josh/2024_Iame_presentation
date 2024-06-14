@@ -9,3 +9,8 @@ log/*.log
 tmp/**
 node_modules/
 .sass-cache
+dist/reveal.esm.js
+dist/reveal.esm.js.map
+dist/reveal.js
+dist/reveal.js.map
+package-lock.json
