@@ -1,0 +1,73 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 36px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+$overlayElementBgColor: 0, 0, 0;
+$overlayElementFgColor: 240, 240, 240;
+
+
+$logo_size: 224px;
+//  For logo
+.watermark {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    z-index: 10;
+}
+
+.watermark img {
+    width: $logo_size;
+}// Change text colors against dark slide backgrounds
+
+@include dark-bg-text-color(#fff);
+
+
+.tsl_watermark {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    z-index: 10;
+}
+
+.tsl_watermark img {
+    width: $logo_size;
+}// Change text colors against dark slide backgrounds
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
