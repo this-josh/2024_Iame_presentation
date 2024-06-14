@@ -113,13 +113,17 @@
 			// https://revealjs.com/config/
 			// slideNumber: true,
 			margin: 0.04,
-
+			allottedTime: 10 * 60 * 1000, // 10 minutes
 			// Bounds for smallest/largest possible scale to apply to content
 			minScale: 0.2,
 			maxScale: 2.0,
-
+			transitionSpeed: 'slow',
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealChart]
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealChart, RevealMath.KaTeX],
+			dependencies: [
+
+				{ src: 'plugin/elapsed-time-bar/elapsed-time-bar.js' }
+			]
 		});
 	</script>
 </body>
