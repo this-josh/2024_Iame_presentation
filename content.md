@@ -224,7 +224,7 @@ Note:
 
 # Our disruption
 <!-- .slide: data-auto-animate -->
-> Reduce Russian gas import by 20% per month from February
+> Reduce Russian gas imports by 20% per month from February
 
 
 Note:
@@ -232,23 +232,39 @@ Note:
 ---
 # Our disruption
 <!-- .slide: data-auto-animate -->
-> Reduce Russian gas import by 20% per month from February
+> Reduce Russian gas imports by 20% per month from February
 
 - Europe is trying to reduce reliance on Russia
+
+Note:
+- Synthetic scenario is based on
 
 ---
 
 # Our disruption
 <!-- .slide: data-auto-animate -->
-> Reduce Russian gas import by 20% per month from February
+> Reduce Russian gas imports by 20% per month from February
 
 - Europe is trying to reduce reliance on Russia  
 - Russia invaded Ukraine in February
 
 Note:
 - February was chosen as Russia invaded Ukraine in February 2022
-- Chosen the month matters as it affects the ability to stockpile
+- The month matters as it affects the ability to stockpile
   - From a gas perspective February is good, it is when consumption starts to reduce
+
+---
+
+# Our disruption
+<!-- .slide: data-auto-animate -->
+> Reduce Russian gas imports by 20% per month from February
+
+- Europe is trying to reduce reliance on Russia  
+- Russia invaded Ukraine in February
+- Use data from February 2015-2019
+
+Note:
+- These years exclude actual disruptions associated with the war and COVID
 
 ---
 
@@ -285,13 +301,6 @@ Note:
 <p>Pipeline worse affected</p>
 <p>Little Russian export capacity by Jan 2017</p>
 </section>
-<section data-auto-animate>
-<h3>Results: Trade capacity</h3>
-<img class="r-stretch" src="./assets/global_max_flows.png" alt="Natural Gas Deficit"> 
-<p>Pipeline worse affected</p>
-<p>Little Russian export capacity by Jan 2017</p>
-</section>
-
 <section>
 <p>After disruption</p>
 <h2 class="r-fit-text">$45.7\%$ </h2>
@@ -333,35 +342,86 @@ Note:
 </section>
 
 ---
-### Policy implications
-<!-- .slide: data-auto-animate -->
 
-*Enables a user to test multiple scenarios*
-  - Governments can explore the implications of a policy <!-- .element: class="fragment" -->
-    - Trade embargoes
-    - Stockpiling 
-  - Traders and/or governments can consider optimal stockpiling <!-- .element: class="fragment" -->
+<h3 class="r-fit-text">Policy implications</h3>
 
+<div class="row">
+  <div class="column">
+    <p><strong class="fragment" data-fragment-index="1">Evaluating various scenarios</strong></p>
+    <ul>
+      <li class="fragment" data-fragment-index="3">Trade embargoes</li>
+      <li class="fragment" data-fragment-index="4">Logistics disruptions</li>
+      <li class="fragment" data-fragment-index="5">Optimal pppstockpiling</li>
+    </ul>
+  </div>
+  <div class="column">
+    <p><strong class="fragment" data-fragment-index="2">Of interest to</strong></p>
+    <ul class="fragment" data-fragment-index="6">
+      <li>Governments</li>
+      <li>Think tanks</li>
+      <li>Traders</li>
+      <li>Supply chain managers</li>
+    </ul>
+  </div>
+</div>
 
 ---
 
-# Future work
-<!-- .slide: data-auto-animate -->
-
-Include shipping (AIS) data
-  - Minimise shipping emissions <!-- .element: class="fragment" -->
-  - Disrupt shipping corridors <!-- .element: class="fragment" -->
-
+<section data-background-iframe="https://www.marinetraffic.com/en/ais/embed" data-preload data-background-interactive data-auto-animate>
+<div class="rounded-box">
+<h1 data-id="fut_work"> Future Work</h1>
+<p>Include shipping (AIS) data</p>
+<ul>
+  <li>Minimise shipping emissions</li>
+  <li>Disrupt shipping corridors</li>
+</ul>
+</div>
+</section>
 ---
+<section data-auto-animate>
+<div class="rounded-box">
+<h1 data-id="fut_work"> Future Work</h1>
+<p>Include shipping (AIS) data</p>
+<ul>
+  <li>Minimise shipping emissions</li>
+  <li>Disrupt shipping corridors</li>
+</ul>
+</div>
+<hr data-id="hr1">
+<p>Apply methods to other commodities</p>
+</section>
 
-# Future work
-<!-- .slide: data-auto-animate -->
+<section data-auto-animate>
+<div class="rounded-box">
+<h1 data-id="fut_work"> Future Work</h1>
+<p>Include shipping (AIS) data</p>
+<ul>
+  <li>Minimise shipping emissions</li>
+  <li>Disrupt shipping corridors</li>
+</ul>
+</div>
+<hr data-id="hr1">
+<p>Apply methods to other commodities</p>
+<ul>
+  <li>Minimise shipping emissions</li> 
+</ul>
 
-Include shipping (AIS) data
-  - Minimise shipping emissions 
-  - Disrupt shipping corridors 
-<hr>
+</section>
+<section data-auto-animate>
+<div class="rounded-box">
+<h1 data-id="fut_work"> Future Work</h1>
+<p>Include shipping (AIS) data</p>
+<ul>
+  <li>Minimise shipping emissions</li>
+  <li>Disrupt shipping corridors</li>
+</ul>
+</div>
+<hr data-id="hr1">
+<p>Apply methods to other commodities</p>
+<ul>
+  <li>Minimise shipping emissions</li> 
 
-Apply methods to other commodities
-  - Food <!-- .element: class="fragment" -->
-  - Rare earth Metals <!-- .element: class="fragment" -->
+  <li>Disrupt shipping corridors</li>
+</ul>
+
+</section>
