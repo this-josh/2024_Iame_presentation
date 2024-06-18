@@ -61,7 +61,7 @@ For example an EV
 <img class="r-stretch" src="./assets/EV_metals.png" />
 <p>Requires a new system of trade</p>
 <aside class="notes">
-Further technoogical innovations may require further modifications to the trade network 
+Further techngical innovations may require further modifications to the trade network 
 </aside>
 </section>
 
@@ -84,7 +84,12 @@ Further technoogical innovations may require further modifications to the trade 
 > From public data: Production, consumption, stockpiling, and trade flows
 
 Note:
-- From public data, includes
+- From public data including
+  - International Energy Agency
+  - Jodi Gas
+  - UN 
+  - CEPII
+- We have prod, con...
 - Monthly data allows stockpiling
   - Captures variations throughout the year
 
@@ -110,10 +115,26 @@ Note:
 > From public data: Production, consumption, stockpiling, and trade flows
 
 **A model of global trade for optimal commodity stockpiling**
-> Trade is represented as a graph and solved as a Mixed-Integer-Linear Program
+> - Trade is represented as a graph 
 
+Note:
+- Trade is represented as a graph with a node for all countries and a link for all pipeline trade and all routes LNG trade has previously occured between
 
 ---
+# Contributions
+<!-- .slide: data-auto-animate -->
+**Method to produce monthly Natural Gas data**
+> From public data: Production, consumption, stockpiling, and trade flows
+
+**A model of global trade for optimal commodity stockpiling**
+> - Trade is represented as a graph 
+> - Solved as a Mixed-Integer-Linear Program
+
+Note:
+- We then formulate and solve a MILP across the network
+
+
+
 <!-- - Key to energy transition
 - Recent geopolitical uncertainty
 - High data availability
@@ -121,17 +142,30 @@ Note:
 
 <section data-auto-animate>
 <h2 data-id="meth"><span>Methodology</span> <span class="fragment">: Data</span></h2>
+
+
+<aside class="notes">
+</aside>
+- Now onto our methodology
+- First we will consider data
+
 </section>
 
 <section data-auto-animate>
 <h2 data-id="meth"><span>Methodology : Data</span></h2>
 <p>Combined multiple sources of public data</p>
+
+<aside class="notes">
+</aside>
+
 </section>
 
 <section data-auto-animate>
 <h2 data-id="meth"><span>Methodology : Data</span></h2>
 <p>Combined multiple sources of public data</p>
 <p>Created a network of global Natural Gas trade</p>
+
+
 </section>
 
 <section data-auto-animate>
