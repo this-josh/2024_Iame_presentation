@@ -369,7 +369,7 @@ Note:
 
 <section data-background-iframe="https://www.marinetraffic.com/en/ais/embed" data-preload data-background-interactive data-auto-animate>
 <div class="rounded-box">
-<h1 data-id="fut_work"> Future Work- see back</h1>
+<h1 data-id="fut_work"> Future Work</h1>
 <p>Include shipping (AIS) data</p>
 <ul>
   <li>Minimise shipping emissions</li>
