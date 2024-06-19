@@ -453,9 +453,8 @@ Note:
 <hr data-id="hr1">
 <p>Apply methods to other commodities</p>
 <ul>
-  <li>Minimise shipping emissions</li> 
-
-  <li>Disrupt shipping corridors</li>
+  <li>Food</li> 
+  <li>Rare Earth Metals</li>
 </ul>
 
 </section>
