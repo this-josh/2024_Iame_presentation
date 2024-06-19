@@ -63,7 +63,7 @@
 	<div class="reveal">
 		<div class="slides">
 			<section data-background-video="./assets/fire.mp4" data-background-video-loop data-background-video-muted
-				style="color:white">
+				style="color:white" class="dark-tsl">
 				<h1 style="color:white">Mitigating Supply Deficits</h1>
 				A Network Flow Analysis of Global Natural Gas Trade Dynamics in Response to
 				Russian Gas Export Reductions
@@ -436,7 +436,7 @@
 			<section>
 				<h2 class="r-fit-text">Interactive results</h2>
 			</section>
-			<section data-background-iframe="https://opt-viewer.joshkirk.co.uk/" data-preload
+			<section class="hide-tsl-watermark" data-background-iframe="https://opt-viewer.joshkirk.co.uk/" data-preload
 				data-background-interactive>
 			</section>
 
@@ -604,6 +604,31 @@
 			],
 			pdfMaxPagesPerSlide: 1
 		});
+		// hide tsl logo
+		Reveal.addEventListener('slidechanged', function (event) {
+			var watermark = document.querySelector('.tsl_watermark');
+			if (Reveal.getCurrentSlide().classList.contains('hide-tsl-watermark')) {
+				watermark.style.display = 'none';
+			} else {
+				watermark.style.display = 'block';
+			}
+		});
+		function adjustWatermarkColor() {
+			var indices = Reveal.getIndices(); // Get the indices of the current slide and sub-slide
+			var currentSlide = Reveal.getSlide(indices.h, indices.v); // Get the correct <section> element
+			var watermark = document.querySelector('.tsl_watermark img');
+			if (currentSlide.classList.contains('dark-tsl')) {
+				watermark.style.filter = 'invert(1)';
+			} else {
+				watermark.style.filter = 'invert(0)';
+			}
+		}
+
+		// Run the function when the presentation is ready
+		Reveal.addEventListener('ready', adjustWatermarkColor);
+
+		// Also run the function when the slide changes
+		Reveal.addEventListener('slidechanged', adjustWatermarkColor);
 	</script>
 </body>
 

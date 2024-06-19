@@ -70,6 +70,9 @@ $logo_size: 224px;
     width: $logo_size;
 }// Change text colors against dark slide backgrounds
 
+.hide-tsl-watermark .tsl_watermark {
+    display: none;
+}
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------

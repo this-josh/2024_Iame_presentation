@@ -31,6 +31,10 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   width: 224px;
 }
 
+.hide-tsl-watermark .tsl_watermark {
+  display: none;
+}
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
