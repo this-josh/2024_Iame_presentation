@@ -596,14 +596,12 @@
 			minScale: 0.2,
 			maxScale: 2.0,
 			transitionSpeed: 'slow',
+			totalTime:120,
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealChart, RevealMath.KaTeX],
 			dependencies: [
-
-				{ src: 'plugin/elapsed-time-bar/elapsed-time-bar.js' }
 			],
-			pdfMaxPagesPerSlide: 1
-		});
+			pdfMaxPagesPerSlide: 1,
 		// hide tsl logo
 		Reveal.addEventListener('slidechanged', function (event) {
 			var watermark = document.querySelector('.tsl_watermark');
