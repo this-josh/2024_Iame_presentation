@@ -14,3 +14,4 @@ dist/reveal.esm.js.map
 dist/reveal.js
 dist/reveal.js.map
 package-lock.json
+.env
