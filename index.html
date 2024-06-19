@@ -600,7 +600,14 @@
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealChart, RevealMath.KaTeX],
 			dependencies: [
+			{ src: 'https://cdn.pubnub.com/sdk/javascript/pubnub.8.2.4.min.js', async: true },
+			{ src: 'plugin/pubnub-remote-control.js', async: true },
 			],
+			pubnubRemoteControl: {
+			subscribeKey: 'sub-c-424382e3-b55e-4bb0-899c-bfda638574f7',    // PubNub subscribe key,
+			publishKey: 'pub-c-25cb0030-bd7c-41cd-9fc4-54470b36fefa',        // PubNub publish key
+			userID:'josh-k'
+			},
 			pdfMaxPagesPerSlide: 1,
 		})
 		// hide tsl logo
