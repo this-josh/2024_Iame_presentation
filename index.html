@@ -78,10 +78,8 @@
 				<aside class="notes">
 
 					<ul>
-						<li>Protectionism</li>
-						<li>IRA, Made in China</li>
-						<li>Embargoes</li>
-						<li>Russian gas</li>
+						<li>Protectionism --> IRA, Made in China</li>
+						<li>Embargoes --> Russian gas, Rare metals</li>
 					</ul>
 				</aside>
 
@@ -96,8 +94,10 @@
 					<ul>
 						<li>COVID</li>
 						<li>Shipping</li>
-						<li>12 and 5% of global trade go via Suez and Panama respectively</li>
-						<li>Suez & Panama blockages</li>
+						<ul>
+							<li>12 and 5% of global trade go via Suez and Panama respectively</li>
+							<li>Suez & Panama blockages</li>
+						</ul>
 					</ul>
 				</aside>
 
@@ -111,8 +111,10 @@
 
 					<ul>
 						<li>Increases both</li>
-						<li>Quantity and</li>
-						<li>Types of metals required</li>
+						<ul>
+							<li>Quantity and</li>
+							<li>Types of metals required</li>
+						</ul>
 					</ul>
 				</aside>
 			</section>
@@ -160,13 +162,13 @@
 
 			Note:
 			- From public data including
-			- International Energy Agency
-			- Jodi Gas
-			- UN
-			- CEPII
+				- International Energy Agency
+				- Jodi Gas
+				- UN
+				- CEPII
 			- We have prod, con...
 			- Monthly data allows stockpiling
-			- Captures variations throughout the year
+				- Captures variations throughout the year
 
 			---
 
@@ -282,6 +284,9 @@
 					<h2 data-id="meth"><span>Methodology : Optimisation</span></h2>
 					<p>Formulated a Non-Linear Program</p>
 					<blockquote data-id="both-trade-nets">Includes both trade networks</blockquote>
+					<aside class="notes">
+						- This considers both LNG and pipeline flows
+					</aside>
 				</section>
 				<section data-auto-animate>
 					<h2 data-id="meth"><span>Methodology : Optimisation</span></h2>
@@ -291,14 +296,15 @@
 					<blockquote>Using big-M constraints</blockquote>
 					<aside class="notes">
 						- Provides guarantees of global optimality and is faster
-
 					</aside>
-
-
 				</section>
 			</section>
 			<section data-auto-animate>
 				<p>Solves a problem over</p>
+				<aside class="notes">
+					- Our bilinear problem solves 
+				</aside>
+
 			</section>
 			<section data-auto-animate>
 				<p>Solves a problem over</p>
@@ -328,6 +334,7 @@
 				<p>to global optimality in </p>
 				<h2 class="r-fit-text">$2.09$s </h2>
 				<p>vs 12.9s for the NLP</p>
+				<em>on a Macbook M1 Pro</em>
 			</section>
 
 
@@ -362,7 +369,7 @@
 			Note:
 			- February was chosen as Russia invaded Ukraine in February 2022
 			- The month matters as it affects the ability to stockpile
-			- From a gas perspective February is good, it is when consumption starts to reduce
+				- From a gas perspective February is good, it is when consumption starts to reduce
 
 			---
 
@@ -555,7 +562,8 @@
 			dependencies: [
 
 				{ src: 'plugin/elapsed-time-bar/elapsed-time-bar.js' }
-			]
+			],
+			pdfMaxPagesPerSlide: 1 
 		});
 	</script>
 </body>
