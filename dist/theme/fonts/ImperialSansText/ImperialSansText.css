@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Imperial Sans Text';
+    src: url('./ImperialSansText-Regular.eot');
+    src: url('./ImperialSansText-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./ImperialSansText-Regular.woff') format('woff'),
+         url('./ImperialSansText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Imperial Sans Text';
+    src: url('./ImperialSansText-italic.eot');
+    src: url('./ImperialSansText-italic.eot?#iefix') format('embedded-opentype'),
+         url('./ImperialSansText-italic.woff') format('woff'),
+         url('./ImperialSansText-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Imperial Sans Text';
+    src: url('./ImperialSansText-semibold.eot');
+    src: url('./ImperialSansText-semibold.eot?#iefix') format('embedded-opentype'),
+         url('./ImperialSansText-semibold.woff') format('woff'),
+         url('./ImperialSansText-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Imperial Sans Text';
+    src: url('./ImperialSansText-semibolditalic.eot');
+    src: url('./ImperialSansText-semibolditalic.eot?#iefix') format('embedded-opentype'),
+         url('./ImperialSansText-semibolditalic.woff') format('woff'),
+         url('./ImperialSansText-semibolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
