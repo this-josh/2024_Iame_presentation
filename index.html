@@ -64,7 +64,7 @@
 		<div class="slides">
 			<section data-background-video="./assets/fire.mp4" data-background-video-loop data-background-video-muted
 				style="color:white" class="dark-tsl">
-				<h1 style="color:white">Mitigating Supply Deficit12s</h1>
+				<h1 style="color:white">Mitigating Supply Deficits</h1>
 				A Network Flow Analysis of Global Natural Gas Trade Dynamics in Response to
 				Russian Gas Export Reductions
 			</section>
@@ -578,9 +578,13 @@
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
 	<script src="plugin/math/math.js"></script>
-
+	<!-- <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.8.2.4.min.js"></script>
+	<script src="plugin/pubnub-remote-control.js"></script> -->
 	<script>
-
+        // import Reveal from './dist/reveal.esm.js';
+        // import RevealRemote from '/_remote/plugin/remote.esm.js';
+		// const RevealRemote = window.RevealRemote;
+    
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/
 		// - https://revealjs.com/config/
@@ -591,7 +595,6 @@
 			// https://revealjs.com/config/
 			// slideNumber: true,
 			margin: 0.04,
-			allottedTime: 10 * 60 * 1000, // 10 minutes
 			// Bounds for smallest/largest possible scale to apply to content
 			minScale: 0.2,
 			maxScale: 2.0,
@@ -610,7 +613,10 @@
 			userID:'josh-k'
 			},
 			pdfMaxPagesPerSlide: 1,
-		})
+			// remote: {
+			// server: "http://localhost:8080",
+			// path: "/socket.io",
+});
 		// hide tsl logo
 		Reveal.addEventListener('slidechanged', function (event) {
 			var watermark = document.querySelector('.tsl_watermark');
@@ -636,7 +642,10 @@
 
 		// Also run the function when the slide changes
 		Reveal.addEventListener('slidechanged', adjustWatermarkColor);
+
+
 	</script>
+	
 </body>
 
 </html>
