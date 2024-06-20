@@ -68,6 +68,7 @@
 				A Network Flow Analysis of Global Natural Gas Trade Dynamics in Response to
 				Russian Gas Export Reductions
 			</section>
+
 			<section data-auto-animate>
 				<h2>Motivation</h2>
 			</section>
@@ -302,46 +303,46 @@
 			<section data-auto-animate>
 				<p class="math" data-id="opt">
 
-				$$
-				\begin{equation}
-				\begin{aligned}
-					 & \text{minimise}   & \text{Supply deficit} \\
-					 & \text{subject to} & \text{Conservation of mass} \\
-				\end{aligned}
-				\end{equation}
+					$$
+					\begin{equation}
+					\begin{aligned}
+					& \text{minimise} & \text{Supply deficit} \\
+					& \text{subject to} & \text{Conservation of mass} \\
+					\end{aligned}
+					\end{equation}
 
-								$$
+					$$
 				</p>
 			</section>
 			<section data-auto-animate>
 				<p class="math" data-id="opt">
 
-				$$
-				\begin{equation}
-				\begin{aligned}
-					 & \text{minimise}   & \text{Supply deficit} \\
-					 & \text{subject to} & \text{Conservation of mass} \\
-					& & \text{Use of storage}                          \\
-				\end{aligned}
-				\end{equation}
+					$$
+					\begin{equation}
+					\begin{aligned}
+					& \text{minimise} & \text{Supply deficit} \\
+					& \text{subject to} & \text{Conservation of mass} \\
+					& & \text{Use of storage} \\
+					\end{aligned}
+					\end{equation}
 
-								$$
+					$$
 				</p>
 			</section>
 			<section data-auto-animate>
 				<p class="math" data-id="opt">
 
-				$$
-				\begin{equation}
-				\begin{aligned}
-					 & \text{minimise}   & \text{Supply deficit} \\
-					 & \text{subject to} & \text{Conservation of mass} \\
-					& & \text{Use of storage}                          \\
-					& & \text{Link flow capacities}                          \\
-				\end{aligned}
-				\end{equation}
+					$$
+					\begin{equation}
+					\begin{aligned}
+					& \text{minimise} & \text{Supply deficit} \\
+					& \text{subject to} & \text{Conservation of mass} \\
+					& & \text{Use of storage} \\
+					& & \text{Link flow capacities} \\
+					\end{aligned}
+					\end{equation}
 
-								$$
+					$$
 				</p>
 			</section>
 
@@ -626,10 +627,10 @@
 	<!-- <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.8.2.4.min.js"></script>
 	<script src="plugin/pubnub-remote-control.js"></script> -->
 	<script>
-        // import Reveal from './dist/reveal.esm.js';
-        // import RevealRemote from '/_remote/plugin/remote.esm.js';
+		// import Reveal from './dist/reveal.esm.js';
+		// import RevealRemote from '/_remote/plugin/remote.esm.js';
 		// const RevealRemote = window.RevealRemote;
-    
+
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/
 		// - https://revealjs.com/config/
@@ -645,13 +646,13 @@
 			maxScale: 2.0,
 			transitionSpeed: 'slow',
 			// navigationMode: 'linear',
-			totalTime:60*10,
-			preloadIframes:true,
-			viewDistance:6,
+			totalTime: 60 * 10,
+			preloadIframes: true,
+			viewDistance: 6,
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealNotes, RevealChart, RevealMath.KaTeX],
-			
-});
+
+		});
 		// hide tsl logo
 		Reveal.addEventListener('slidechanged', function (event) {
 			var watermark = document.querySelector('.tsl_watermark');
@@ -679,7 +680,7 @@
 		Reveal.addEventListener('slidechanged', adjustWatermarkColor);
 
 	</script>
-	
+
 </body>
 
 </html>
