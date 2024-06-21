@@ -35,6 +35,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   display: none;
 }
 
+.aligned-list {
+  list-style-type: disc;
+  padding-left: 1.5em; /* Adjust this value to align the lists as needed */
+  margin-top: 0;
+}
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/

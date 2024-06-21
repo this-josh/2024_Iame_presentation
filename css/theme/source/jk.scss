@@ -73,6 +73,13 @@ $logo_size: 224px;
 .hide-tsl-watermark .tsl_watermark {
     display: none;
 }
+.aligned-list {
+    list-style-type: disc;
+    padding-left: 1.5em; /* Adjust this value to align the lists as needed */
+    margin-top: 0;
+}
+
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------

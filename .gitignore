@@ -15,3 +15,5 @@ dist/reveal.js
 dist/reveal.js.map
 package-lock.json
 .env
+
+pirate.md
