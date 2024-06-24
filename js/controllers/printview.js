@@ -35,7 +35,6 @@ export default class PrintView {
 		const pageWidth = Math.floor(slideWidth * (1 + config.margin)),
 			pageHeight = Math.floor(slideHeight * (1 + config.margin));
 		
-		console.log('slideSize', slideSize, 'pageWidth', pageWidth, 'pageHeight', pageHeight, 'slideWidth', slideWidth, 'slideHeight', slideHeight);
 			// Fixed dimensions for slides
 
 		// // Assuming you want to keep the same margin, calculate the page dimensions based on the fixed slide dimensions
