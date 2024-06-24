@@ -109,18 +109,18 @@ export default class PrintView {
 					page.style.background = presentationBackground;
 				}
 				// if not slide 1 add watermarks
-				if (index > 0) {
-					// Add watermark divs
-					const watermarkDiv = document.createElement('div');
-					watermarkDiv.className = 'watermark';
-					watermarkDiv.innerHTML = '<a href="https://www.imperial.ac.uk/" rel="noopener noreferrer"><img src="./assets/IMPERIAL_logo_RGB_Blue_safe_area_2024.png" /></a>';
-					page.appendChild(watermarkDiv);
+				// if (index > 0) {
+				// 	// Add watermark divs
+				// 	const watermarkDiv = document.createElement('div');
+				// 	watermarkDiv.className = 'watermark';
+				// 	watermarkDiv.innerHTML = '<a href="https://www.imperial.ac.uk/" rel="noopener noreferrer"><img src="./assets/IMPERIAL_logo_RGB_Blue_safe_area_2024.png" /></a>';
+				// 	page.appendChild(watermarkDiv);
 
-					const tslWatermarkDiv = document.createElement('div');
-					tslWatermarkDiv.className = 'tsl_watermark';
-					tslWatermarkDiv.innerHTML = '<a href="https://transport-systems.imperial.ac.uk/" rel="noopener noreferrer"><img src="./assets/TSL_logo.png" /></a>';
-					page.appendChild(tslWatermarkDiv);
-				}
+				// 	const tslWatermarkDiv = document.createElement('div');
+				// 	tslWatermarkDiv.className = 'tsl_watermark';
+				// 	tslWatermarkDiv.innerHTML = '<a href="https://transport-systems.imperial.ac.uk/" rel="noopener noreferrer"><img src="./assets/TSL_logo.png" /></a>';
+				// 	page.appendChild(tslWatermarkDiv);
+				// }
 
 				page.appendChild(slide);
 
