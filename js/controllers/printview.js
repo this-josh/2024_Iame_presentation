@@ -26,13 +26,21 @@ export default class PrintView {
 		const slideSize = this.Reveal.getComputedSlideSize(window.innerWidth, window.innerHeight);
 
 		// Dimensions of the PDF pages
-		const pageWidth = Math.floor(slideSize.width * (1 + config.margin)),
-			pageHeight = Math.floor(slideSize.height * (1 + config.margin));
-
+		
 		// Dimensions of slides within the pages
 		const slideWidth = slideSize.width,
-			slideHeight = slideSize.height;
+		slideHeight = slideSize.height;
+		// const slideWidth = 1700,
+		// 	slideHeight = 1100;
+		const pageWidth = Math.floor(slideWidth * (1 + config.margin)),
+			pageHeight = Math.floor(slideHeight * (1 + config.margin));
+		
+		console.log('slideSize', slideSize, 'pageWidth', pageWidth, 'pageHeight', pageHeight, 'slideWidth', slideWidth, 'slideHeight', slideHeight);
+			// Fixed dimensions for slides
 
+		// // Assuming you want to keep the same margin, calculate the page dimensions based on the fixed slide dimensions
+		// const pageWidth = Math.floor(slideWidth * (1 + config.margin)),
+		// 	pageHeight = Math.floor(slideHeight * (1 + config.margin));
 		await new Promise(requestAnimationFrame);
 
 		// Let the browser know what page size we want to print
