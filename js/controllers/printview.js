@@ -185,7 +185,12 @@ export default class PrintView {
 						if( injectPageNumbers ) {
 							const numberElement = clonedPage.querySelector( '.slide-number-pdf' );
 							const fragmentNumber = index + 1;
+							if(config.slideNumber==="c"){
+								numberElement.innerHTML = slideNumber++;
+							}
+							else{
 							numberElement.innerHTML += '.' + fragmentNumber;
+							}
 						}
 
 						pages.push( clonedPage );
