@@ -59,7 +59,11 @@ var PrintRevealNotes = function() {
             var el = slides[slide];
             var titleel = el.querySelector('h1, h2, h3, h4, h5, h6') || document.createElement('h1'); /* Look for a slide title, or create a blank one */
             num++;
-            var title = num + ". " + titleel.innerText; /* Don't keep the html */
+            var idx = Reveal.getIndices(el);
+            idx['v'] = idx['v'] || 0;
+            idx['h'] ++;
+            idx['v'] ++;
+            var title = idx['h'] + "." +idx['v']+ ". " + titleel.innerText; /* Don't keep the html */
             var notesel = el.querySelector('aside.notes') || document.createElement('aside'); /* Look for notes, or create a blank one */
             var notes = notesel.innerHTML; /* Keep the html for formatting */
             w.document.write('<br><b>' + title + '</b><br>' + notes + '<br>');
