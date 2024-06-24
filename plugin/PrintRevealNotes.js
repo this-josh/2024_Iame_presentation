@@ -63,7 +63,7 @@ var PrintRevealNotes = function() {
             idx['v'] = idx['v'] || 0;
             idx['h'] ++;
             idx['v'] ++;
-            var title = num + " : " + idx['h'] + "." +idx['v']+ ". " + titleel.innerText; /* Don't keep the html */
+            // var title = num + " : " + idx['h'] + "." +idx['v']+ ". " + titleel.innerText; /* Don't keep the html */
             var title = num + ". " + titleel.innerText; /* Don't keep the html */
             var notesel = el.querySelector('aside.notes') || document.createElement('aside'); /* Look for notes, or create a blank one */
             var notes = notesel.innerHTML; /* Keep the html for formatting */
