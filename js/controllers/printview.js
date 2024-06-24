@@ -17,7 +17,6 @@ export default class PrintView {
 	 * PDF.
 	 */
 	async activate() {
-
 		const config = this.Reveal.getConfig();
 		const slides = queryAll(this.Reveal.getRevealElement(), SLIDES_SELECTOR)
 
@@ -102,6 +101,19 @@ export default class PrintView {
 				if (presentationBackground) {
 					page.style.background = presentationBackground;
 				}
+				// if not slide 1 add watermarks
+				if (index > 0) {
+					// Add watermark divs
+					const watermarkDiv = document.createElement('div');
+					watermarkDiv.className = 'watermark';
+					watermarkDiv.innerHTML = '<a href="https://www.imperial.ac.uk/" rel="noopener noreferrer"><img src="./assets/IMPERIAL_logo_RGB_Blue_safe_area_2024.png" /></a>';
+					page.appendChild(watermarkDiv);
+
+					const tslWatermarkDiv = document.createElement('div');
+					tslWatermarkDiv.className = 'tsl_watermark';
+					tslWatermarkDiv.innerHTML = '<a href="https://transport-systems.imperial.ac.uk/" rel="noopener noreferrer"><img src="./assets/TSL_logo.png" /></a>';
+					page.appendChild(tslWatermarkDiv);
+				}
 
 				page.appendChild(slide);
 
@@ -133,8 +145,7 @@ export default class PrintView {
 
 						if (notesLayout === 'separate-page') {
 							pages.push(notesElement);
-						}
-						else {
+						} else {
 							notesElement.style.left = notesSpacing + 'px';
 							notesElement.style.bottom = notesSpacing + 'px';
 							notesElement.style.width = (pageWidth - notesSpacing * 2) + 'px';
@@ -187,8 +198,7 @@ export default class PrintView {
 							const fragmentNumber = index + 1;
 							if (config.slideNumber === "c") {
 								numberElement.innerHTML = slideNumber++;
-							}
-							else {
+							} else {
 								numberElement.innerHTML += '.' + fragmentNumber;
 							}
 						}
@@ -229,7 +239,6 @@ export default class PrintView {
 		this.Reveal.dispatchEvent({ type: 'pdf-ready' });
 
 		viewportElement.classList.remove('loading-scroll-mode');
-
 	}
 
 	/**
