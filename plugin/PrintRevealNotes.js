@@ -15,9 +15,9 @@
     https://gist.githubusercontent.com/pgaskin/1841acca111b7dbb3cd902497f255ba0/raw/fc3f7d5541859cf1a4abf7eafec63b06ac081d98/PrintRevealNotes.js
 */
 
-var PrintRevealNotes = function() {
     /* Open the window */
     var w = window.open('about:blank'); /* Open a blank window */
+var PrintRevealNotes = function(onePagePerSlide=true) {
 
     /* Write the titles */
     var doctitle = "Speaker notes for " + document.title + " Presentation";
@@ -54,6 +54,7 @@ var PrintRevealNotes = function() {
 
     /* Write the notes page */
     var num = 0;
+    let docPrefix = onePagePerSlide ? '<div style="page-break-before: always;">' : '';
     for (var slide in slides) {
         if (slides.hasOwnProperty(slide)) { /* Make sure it is not an inherited object property */
             var el = slides[slide];
@@ -69,19 +70,21 @@ var PrintRevealNotes = function() {
             var notes = notesel.innerHTML; /* Keep the html for formatting */
 
             if (notes !== '') {
-                w.document.write('<div style="page-break-before: always;"><b>' + title + '</b>' + notes + '</div>');
+                w.document.write(docPrefix +'<b>' + title + '</b>' + notes + '</div>');
             }
 
         }
     }
 
-    /* Write the stylesheet */
-    w.document.write(
-        '<style>@page { size: 6in 4in; margin: 10mm; } @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);body{padding:20px;color:#8e8071;font-size:30px;font-family:"Open Sans",AppleSDGothicNeo-Medium,"Segoe UI","Malgun Gothic",sans-serif;background:#fff;-webkit-font-smoothing:antialiased}a{color:#3269a0}a:hover{color:#4183c4}h1,h2,h3,h4,h5{font-weight:400;color:#5c5146;letter-spacing:-1px;font-size:2em}h2{border-bottom:1px solid #e6e6e6;line-height:3.4em}h6{color:#777;font-size:2em}hr{border:1px solid #e6e6e6}p{line-height:38px}p>code{font-family:"Open Sans",AppleSDGothicNeo-Medium,"Segoe UI","Malgun Gothic",sans-serif;color:#e86741;font-size:1.8em}pre>code{font-size:2em;font-family:"Open Sans",AppleSDGothicNeo-Medium,"Segoe UI","Malgun Gothic",sans-serif;letter-spacing:-1px;font-weight:400}blockquote{border-left:4px solid #e6e6e6;padding:0 15px;font-style:italic;color:#e86741;font-size:2em}table{background-color:#fafafa}table tr td,table tr th{border:1px solid #e6e6e6;font-size:2em}table tr:nth-child(2n){background-color:#f2f2f2}</style></body></html>'
-    );
-
-    /* Finish up */
-    w.document.close(); /* Close the document to prevent endless load on firefox */
+    if (onePagePerSlide) {
+            w.document.write(
+        '<style>@page { size: 6in 4in; margin: 10mm; } @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);body{padding:20px;color:#8e8071;font-size:30px;font-family:"Open Sans",AppleSDGothicNeo-Medium,"Segoe UI","Malgun Gothic",sans-serif;background:#fff;-webkit-font-smoothing:antialiased}a{color:#3269a0}a:hover{color:#4183c4}h1,h2,h3,h4,h5{font-weight:400;color:#5c5146;letter-spacing:-1px;font-size:2em}h2{border-bottom:1px solid #e6e6e6;line-height:3.4em}h6{color:#777;font-size:2em}hr{border:1px solid #e6e6e6}p{line-height:38px}p>code{font-family:"Open Sans",AppleSDGothicNeo-Medium,"Segoe UI","Malgun Gothic",sans-serif;color:#e86741;font-size:1.8em}pre>code{font-size:2em;font-family:"Open Sans",AppleSDGothicNeo-Medium,"Segoe UI","Malgun Gothic",sans-serif;letter-spacing:-1px;font-weight:400}blockquote{border-left:4px solid #e6e6e6;padding:0 15px;font-style:italic;color:#e86741;font-size:2em}table{background-color:#fafafa}table tr td,table tr th{border:1px solid #e6e6e6;font-size:2em}table tr:nth-child(2n){background-color:#f2f2f2}</style></body></html>');
+    }
+    else{
+            w.document.write(
+        '<style>@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);body{padding:20px;color:#8e8071;font-size:15px;font-family:"Open Sans",AppleSDGothicNeo-Medium,"Segoe UI","Malgun Gothic",sans-serif;background:#fff;-webkit-font-smoothing:antialiased}a{color:#3269a0}a:hover{color:#4183c4}h1,h2,h3,h4,h5{font-weight:400;color:#5c5146;letter-spacing:-1px}h2{border-bottom:1px solid #e6e6e6;line-height:1.7em}h6{color:#777}hr{border:1px solid #e6e6e6}p{line-height:19px}p>code{font-family:"Open Sans",AppleSDGothicNeo-Medium,"Segoe UI","Malgun Gothic",sans-serif;color:#e86741;font-size:.9em}pre>code{font-size:1em;font-family:"Open Sans",AppleSDGothicNeo-Medium,"Segoe UI","Malgun Gothic",sans-serif;letter-spacing:-1px;font-weight:400}blockquote{border-left:4px solid #e6e6e6;padding:0 15px;font-style:italic;color:#e86741}table{background-color:#fafafa}table tr td,table tr th{border:1px solid #e6e6e6}table tr:nth-child(2n){background-color:#f2f2f2}</style></body></html>');
+    }
+    w.document.close();
 
     setTimeout(function() {
         w.window.print(); // Open the print dialog after a 0.5-second delay
