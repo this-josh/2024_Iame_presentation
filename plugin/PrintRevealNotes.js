@@ -68,8 +68,8 @@ var PrintRevealNotes = function() {
             var notesel = el.querySelector('aside.notes') || document.createElement('aside'); /* Look for notes, or create a blank one */
             var notes = notesel.innerHTML; /* Keep the html for formatting */
 
-            if (notes!==''){
-                w.document.write('<br><b>' + title + '</b><br>' + notes + '<br>');
+            if (notes !== '') {
+                w.document.write('<div style="page-break-before: always;"><b>' + title + '</b>' + notes + '</div>');
             }
 
         }
