@@ -16,8 +16,8 @@
 */
 
     /* Open the window */
+    var PrintRevealNotes = function(onePagePerSlide=true) {
     var w = window.open('about:blank'); /* Open a blank window */
-var PrintRevealNotes = function(onePagePerSlide=true) {
 
     /* Write the titles */
     var doctitle = "Speaker notes for " + document.title + " Presentation";
