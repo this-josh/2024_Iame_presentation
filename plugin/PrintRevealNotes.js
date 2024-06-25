@@ -54,7 +54,7 @@
 
     /* Write the notes page */
     var num = 0;
-    let docPrefix = onePagePerSlide ? '<div style="page-break-before: always;">' : '';
+    let docPrefix = onePagePerSlide ? '<div style="page-break-before: always;">' : '<br>';
     for (var slide in slides) {
         if (slides.hasOwnProperty(slide)) { /* Make sure it is not an inherited object property */
             var el = slides[slide];
